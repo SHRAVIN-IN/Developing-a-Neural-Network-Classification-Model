@@ -1,83 +1,53 @@
 # Developing a Neural Network Classification Model
-
-## AIM
-To develop a neural network classification model for the given dataset.
-
-## THEORY
-An automobile company has plans to enter new markets with their existing products. After intensive market research, they’ve decided that the behavior of the new market is similar to their existing market.
-
-In their existing market, the sales team has classified all customers into 4 segments (A, B, C, D ). Then, they performed segmented outreach and communication for a different segment of customers. This strategy has work exceptionally well for them. They plan to use the same strategy for the new markets.
-
-You are required to help the manager to predict the right group of the new customers.
-
-## Neural Network Model
-Include the neural network model diagram.
-
-## DESIGN STEPS
-### STEP 1: 
-
-Write your own steps
-
-### STEP 2: 
-
-
-
-### STEP 3: 
-
-
-
-### STEP 4: 
-
-
-
-### STEP 5: 
-
-
-
-### STEP 6: 
+print("Confusion Matrix:\n",conf_matrix)
+print("Classification Report:\n",cl_report)
+import seaborn as sns
+x1=["A","B","C","D"]
+sns.heatmap(conf_matrix,annot=True,fmt='d',cmap="Blues",xticklabels=x1,yticklabels=x1)
+plt.xlabel("Predicted")
+plt.ylabel("Actual")
+plt.title("Confusion Matrix")
+plt.show()
 
 
 
 
-
-## PROGRAM
-
-### Name:
-
-### Register Number:
-
-```python
-class PeopleClassifier(nn.Module):
-    def __init__(self, input_size):
-        super(PeopleClassifier, self).__init__()
-        #Include your code here
-
-
-
-    def forward(self, x):
-        #Include your code here
-        
-# Initialize the Model, Loss Function, and Optimizer
-
-def train_model(model, train_loader, criterion, optimizer, epochs):
-    #Include your code here
 
 ```
 
 ### Dataset Information
-Include screenshot of the dataset.
+<img width="1305" height="953" alt="image" src="https://github.com/user-attachments/assets/a77194a8-94c7-4607-b7dc-2c5a556b1d8f" />
+
 
 ### OUTPUT
 
+<img width="1637" height="564" alt="image" src="https://github.com/user-attachments/assets/f5fb381a-2b40-4df1-bca7-03dfa0a8568c" />
+
+<img width="998" height="149" alt="image" src="https://github.com/user-attachments/assets/2ffb1ee6-8175-4698-b4d8-aa415544f108" />
+
+<img width="1724" height="607" alt="image" src="https://github.com/user-attachments/assets/78268d99-ab8f-40b1-b80f-077a7789997b" />
+
+<img width="1636" height="587" alt="image" src="https://github.com/user-attachments/assets/87617723-4d38-416c-a45b-da6d915e45dd" />
+
+<img width="1608" height="604" alt="image" src="https://github.com/user-attachments/assets/bd574126-2ad3-4617-9b08-a7819b40a61b" />
+
+<img width="360" height="852" alt="image" src="https://github.com/user-attachments/assets/9b66c1b6-6ae2-4c42-984c-d8f0d184f772" />
+
+
+
+
+
+
 ## Confusion Matrix
 
-Include confusion matrix here
+<img width="680" height="563" alt="image" src="https://github.com/user-attachments/assets/6cce4423-698c-4dd4-8b59-5b7aec29237e" />
+
 
 ## Classification Report
-Include classification report here
+<img width="782" height="620" alt="image" src="https://github.com/user-attachments/assets/afffec0e-d640-4b5d-bf66-ed7050921751" />
 
-### New Sample Data Prediction
-Include your sample input and output here
+
+
 
 ## RESULT
-Include your result here
+Therefore, a neural network classification model has been developed for the given dataset.
