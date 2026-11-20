@@ -45,9 +45,9 @@ Evaluate the model on the test dataset, measure its accuracy, and use it to pred
 
 ## PROGRAM
 
-### Name: Suman G
+### Name:JANA SHRAVIN S
 
-### Register Number:212223240163
+### Register Number:212224243003
 
 ```
 import torch
